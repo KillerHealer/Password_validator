@@ -1,3 +1,5 @@
+import sys
+
 from colorama import Fore
 
 
@@ -34,4 +36,4 @@ def pass_val(pw: str):
             exit(1)
 
 
-pass_val("kjlijaaA1")
+pass_val(str(sys.argv[1]))
