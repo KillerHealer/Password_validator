@@ -36,4 +36,8 @@ def pass_val(pw: str):
             exit(1)
 
 
-pass_val(str(sys.argv[1]))
+if sys.argv[1] != '-f':
+    pass_val(str(sys.argv[1]))
+else:
+    f = open(sys.argv[2])
+    pass_val(f.read())
